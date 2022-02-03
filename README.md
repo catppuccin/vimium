@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/elkrien/vimium/raw/main/assets/cat-vimium.png"/>
+  <img src="https://raw.githubusercontent.com/elkrien/vimium/main/assets/cat-vimium.png"/>
 </p>
 
 
