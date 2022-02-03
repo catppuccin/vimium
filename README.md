@@ -5,13 +5,13 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-    <a href="https://github.com/elkrien/catppuccin-vimium/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/template?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
-    <a href="https://github.com/elkrien/catppuccin-vimium/issues"><img src="https://img.shields.io/github/issues/catppuccin/template?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/elkrien/catppuccin-vimium/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/elkrien/vimium/stargazers"><img src="https://img.shields.io/github/stars/elkrien/vimium?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
+    <a href="https://github.com/elkrien/vimium/issues"><img src="https://img.shields.io/github/issues/elkrien/vimium?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/elkrien/vimium/contributors"><img src="https://img.shields.io/github/contributors/elkrien/vimium?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="https://github.com/elkrien/catppuccin-vimium/raw/main/assets/cat-vimium.png"/>
+  <img src="https://github.com/elkrien/vimium/raw/main/assets/cat-vimium.png"/>
 </p>
 
 
