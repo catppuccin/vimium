@@ -11,20 +11,20 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/cat-vimium.png"/>
+  <img src="assets/cat-vimium.png"/>
 </p>
 
 
 ## Usage
 
-1. Open Vimum addon's preferences.
-2. Activate advanced options.
+1. Open Vimum addon's preferences
+2. Activate advanced options
 3. Copy the content of selected file from `src` folder into the custom CSS field:
     - 🌻 catppuccin-vimium-latte.css
     - 🪴 catppuccin-vimium-frappe.css
     - 🌺 catppuccin-vimium-macchiato.css
     - 🌿 catppuccin-vimium-mocha.css
-4. Save changes and reload pages.
+4. Save changes and reload pages
 
 ## 💝 Thanks to
 
