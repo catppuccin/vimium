@@ -10,10 +10,29 @@
     <a href="https://github.com/catppuccin/vimium/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/vimium?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
+
 <p align="center">
-  <img src="assets/cat-vimium.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/cat-vimium.png"/>
 </p>
 
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-latte.png"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-frappe.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-macchiato.png"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-mocha.png"/>
+</details>
 
 ## Usage
 
