@@ -38,11 +38,11 @@
 
 1. Open Vimum addon's preferences
 2. Activate advanced options
-3. Copy the content of selected file from `src` folder into the custom CSS field:
-    - 🌻 catppuccin-vimium-latte.css
-    - 🪴 catppuccin-vimium-frappe.css
-    - 🌺 catppuccin-vimium-macchiato.css
-    - 🌿 catppuccin-vimium-mocha.css
+3. Copy the content of selected file from `dist` folder into the custom CSS field:
+    - 🌻 [catppuccin-vimium-latte.css](./dist/catppuccin-vimium-latte.css)
+    - 🪴 [catppuccin-vimium-frappe.css](./dist/catppuccin-vimium-frappe.css)
+    - 🌺 [catppuccin-vimium-macchiato.css](./dist/catppuccin-vimium-macchiato.css)
+    - 🌿 [catppuccin-vimium-mocha.css](./dist/catppuccin-vimium-mocha.css)
 4. Save changes and reload pages
 
 ## 💝 Thanks to
