@@ -21,7 +21,7 @@
 
 #vomnibar {
   background: #24273A; /* base */
-  border: 2px solid #B7BDF8; /* lavender */ 
+  border: 2px solid #B7BDF8; /* lavender */
   animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
 }
 
@@ -66,7 +66,7 @@
 }
 
 #vomnibar li .vomnibarSource {
-  color: #F5A97F; /* peach */ 
+  color: #F5A97F; /* peach */
 }
 
 #vomnibar li em,
