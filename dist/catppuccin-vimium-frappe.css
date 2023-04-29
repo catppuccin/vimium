@@ -1,13 +1,27 @@
+/* Frappe palette */
+
+:root {
+  --rosewater: #f2d5cf;
+  --peach: #ef9f76;
+  --blue: #8caaee;
+  --lavender: #babbf1;
+  --green: #a6d189;
+  --text: #c6d0f5;
+  --surface2: #626880;
+  --surface0: #414559;
+  --base: #303446;
+  --mantle: #292c3c;
+}
 #vimiumHintMarkerContainer div.internalVimiumHintMarker, #vimiumHintMarkerContainer div.vimiumHintMarker {
   padding: 3px 4px;
-  background: #FAB387; /* peach */
+  background: var(--peach);
   border: 1;
-  border-color: #181825; /* mantle */
+  border-color: var(--mantle);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 #vimiumHintMarkerContainer div span {
-  color: #181825; /* mantle */
+  color: var(--mantle);
   text-shadow: none;
 }
 
@@ -16,12 +30,12 @@
 }
 
 #vimiumHintMarkerContainer div > .matchingCharacter ~ span {
-  color: #585B70; /* surface2 */
+  color: var(--surface2);
 }
 
 #vomnibar {
-  background: #1E1E2E; /* base */
-  border: 2px solid #B4BEFE; /* lavender */
+  background: var(--base);
+  border: 2px solid var(--lavender);
   animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
   max-height: calc(100vh - 70px);
   overflow: hidden;
@@ -39,8 +53,8 @@
 }
 
 #vomnibar input {
-  color: #CDD6F4; /* text */
-  background: #1E1E2E; /* base */
+  color: var(--text);
+  background: var(--base);
   border: none;
   height: unset;
   padding: 16px 30px;
@@ -49,19 +63,19 @@
 #vomnibar .vomnibarSearchArea {
   border: none;
   padding: unset;
-  background: #1E1E2E; /* base */
+  background: var(--base)
 }
 
 #vomnibar ul {
   padding: 0;
   margin: 0;
-  background: #1E1E2E; /* base */
-  border-top: 1px solid #313244; /* surface0 */
+  background: var(--base);
+  border-top: 1px solid var(--surface0);
 }
 
 #vomnibar li {
   padding: 10px;
-  border-bottom: 1px solid #313244; /* surface0 */
+  border-bottom: 1px solid var(--surface0)
 }
 
 #vomnibar li .vomnibarTopHalf,
@@ -70,48 +84,48 @@
 }
 
 #vomnibar li .vomnibarSource {
-  color: #FAB387; /* peach */
+  color: var(--peach);
 }
 
 #vomnibar li em,
 #vomnibar li .vomnibarTitle {
-  color: #89B4FA; /* blue */
+  color: var(--blue);
   font-weight: bold;
 }
 
 #vomnibar li .vomnibarUrl {
-  color: #F5E0DC; /* rosewater */
+  color: var(--rosewater);
 }
 
 #vomnibar li .vomnibarMatch {
-  color: #A6E3A1; /* green */
+  color: var(--green);
   font-weight: bold;
 }
 
 #vomnibar li .vomnibarTitle .vomnibarMatch {
-  color: #89B4FA; /* blue */
+  color: var(--blue);
 }
 
 #vomnibar li.vomnibarSelected {
-  background-color: #313244; /* surface0 */
+  background-color: var(--surface0);
 }
 
 div.vimiumHUD {
-  background: #1E1E2E; /* base */
+  background: var(--base);
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 div.vimiumHUD span#hud-find-input,
 div.vimiumHUD .vimiumHUDSearchAreaInner {
-  color: #CDD6F4; /* text */
+  color: var(--text)
 }
 
 div.vimiumHUD .hud-find {
-  background-color: #1E1E2E; /* base */
+  background-color: var(--base);
   border: none;
 }
 
 div.vimiumHUD .vimiumHUDSearchArea {
-  background-color: #1E1E2E; /* base */
+  background-color: var(--base);
 }
