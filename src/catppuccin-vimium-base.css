@@ -7,7 +7,7 @@
 }
 
 #vimiumHintMarkerContainer div span {
-  color: var(--mantle);
+  color: var(--mantle) !important;
   text-shadow: none;
 }
 
