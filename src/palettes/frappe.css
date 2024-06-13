@@ -1,14 +1,14 @@
 /* Frappe palette */
 
 :root {
-  --rosewater: #f2d5cf;
-  --peach: #ef9f76;
-  --blue: #8caaee;
-  --lavender: #babbf1;
-  --green: #a6d189;
-  --text: #c6d0f5;
-  --surface2: #626880;
-  --surface0: #414559;
-  --base: #303446;
-  --mantle: #292c3c;
+  --vimium-rosewater: #f2d5cf;
+  --vimium-peach: #ef9f76;
+  --vimium-blue: #8caaee;
+  --vimium-lavender: #babbf1;
+  --vimium-green: #a6d189;
+  --vimium-text: #c6d0f5;
+  --vimium-surface2: #626880;
+  --vimium-surface0: #414559;
+  --vimium-base: #303446;
+  --vimium-mantle: #292c3c;
 }
