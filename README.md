@@ -12,38 +12,34 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/cat-vimium.png"/>
+  <img src="./assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-latte.png"/>
+  <img src="./assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-frappe.png"/>
+  <img src="./assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-macchiato.png"/>
+  <img src="./assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/vimium/main/assets/vimium-mocha.png"/>
+  <img src="./assets/mocha.webp"/>
 </details>
 
 ## Usage
 
-1. Open Vimum addon's preferences
-2. Activate advanced options
-3. Copy the content of selected file from `dist` folder into the custom CSS field:
-    - 🌻 [catppuccin-vimium-latte.css](./dist/catppuccin-vimium-latte.css)
-    - 🪴 [catppuccin-vimium-frappe.css](./dist/catppuccin-vimium-frappe.css)
-    - 🌺 [catppuccin-vimium-macchiato.css](./dist/catppuccin-vimium-macchiato.css)
-    - 🌿 [catppuccin-vimium-mocha.css](./dist/catppuccin-vimium-mocha.css)
-4. Save changes and reload pages
+1. Open Vimium's Options page.
+1. Scroll down to the **"CSS for Vimium UI"** textbox.
+1. Copy the content of your chosen flavour file from the [themes](./themes) folder into the textbox.
+1. Save changes and restart your browser.
 
 ## 💝 Thanks to
 
