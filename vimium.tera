@@ -4,7 +4,7 @@ whiskers:
   matrix:
     - flavor
   hex_format: "#{{r}}{{g}}{{b}}"
-  filename: "dist/catppuccin-vimium-{{flavor.identifier}}.css"
+  filename: "themes/catppuccin-vimium-{{flavor.identifier}}.css"
 ---
 /* Catppuccin {{flavor.identifier | capitalize }} Palette */
 
@@ -29,7 +29,7 @@ whiskers:
 }
 
 #vimiumHintMarkerContainer div span {
-  color: var(--vimium-mantle);
+  color: var(--vimium-mantle) !important;
   text-shadow: none;
 }
 
