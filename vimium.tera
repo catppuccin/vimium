@@ -1,3 +1,25 @@
+---
+whiskers:
+  version: 2.4.0
+  matrix:
+    - flavor
+  hex_format: "#{{r}}{{g}}{{b}}"
+  filename: "dist/catppuccin-vimium-{{flavor.identifier}}.css"
+---
+/* Catppuccin {{flavor.identifier | capitalize }} Palette */
+
+:root {
+  --vimium-rosewater: {{rosewater.hex}};
+  --vimium-peach: {{peach.hex}};
+  --vimium-green: {{green.hex}};
+  --vimium-blue: {{blue.hex}};
+  --vimium-lavender: {{lavender.hex}};
+  --vimium-text: {{text.hex}};
+  --vimium-surface2: {{surface2.hex}};
+  --vimium-surface0: {{surface0.hex}};
+  --vimium-base: {{base.hex}};
+  --vimium-mantle: {{mantle.hex}};
+}
 #vimiumHintMarkerContainer div.internalVimiumHintMarker, #vimiumHintMarkerContainer div.vimiumHintMarker {
   padding: 3px 4px;
   background: var(--vimium-peach);
