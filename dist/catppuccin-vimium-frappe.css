@@ -1,11 +1,11 @@
-/* Frappe palette */
+/* Catppuccin Frappe Palette */
 
 :root {
   --vimium-rosewater: #f2d5cf;
   --vimium-peach: #ef9f76;
+  --vimium-green: #a6d189;
   --vimium-blue: #8caaee;
   --vimium-lavender: #babbf1;
-  --vimium-green: #a6d189;
   --vimium-text: #c6d0f5;
   --vimium-surface2: #626880;
   --vimium-surface0: #414559;
