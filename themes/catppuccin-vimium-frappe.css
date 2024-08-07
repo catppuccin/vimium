@@ -11,6 +11,7 @@
   --vimium-surface0: #414559;
   --vimium-base: #303446;
   --vimium-mantle: #292c3c;
+  --vimium-mantle: #232634;
 }
 #vimiumHintMarkerContainer div.internalVimiumHintMarker, #vimiumHintMarkerContainer div.vimiumHintMarker {
   padding: 3px 4px;
@@ -126,6 +127,29 @@ div.vimiumHUD .hud-find {
   border: none;
 }
 
-div.vimiumHUD .vimiumHUDSearchArea {
+div.vimiumHUD .vimiumHUDSearchArea, body.vimiumBody {
   background-color: var(--vimium-base);
+}
+
+#footerWrapper, #userDefinedLinkHintCss, #scrollStepSize, #linkHintNumbers, #newTabUrl, #nextPatterns, #previousPatterns, #searchUrl, #linkHintCharacters, #searchEngines, #keyMappings, #u
+ploadBackup
+{
+  background-color: var(--vimium-mantle);
+}
+
+#footer, .remove, input[name="pattern"], input[name="passKeys"], #uploadBackup
+{
+  background-color: var(--vimium-mantle) !important;
+}
+
+body.vimiumBody input {
+  border-color: var(--vimium-crust);
+}
+
+body.vimiumBody a {
+  color: var(--vimium-lavender);
+}
+
+body.vimiumBody .exclusionHeaderText, body.vimiumBody .example, body.vimiumBody .caption, body.vimiumBody header, body.vimiumBody textarea, body.vimiumBody input, body.vimiumBody label  {
+  color: var(--vimium-text) !important;
 }
