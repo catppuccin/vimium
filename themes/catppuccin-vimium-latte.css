@@ -122,17 +122,25 @@ div.vimiumHUD .vimiumHUDSearchAreaInner {
   color: var(--vimium-text)
 }
 
-div.vimiumHUD .vimiumHUDSearchArea, body.vimiumBody {
+div.vimiumHUD .hud-find {
+  background-color: var(--vimium-base);
+  border: none;
+}
+
+div.vimiumHUD .vimiumHUDSearchArea {
   background-color: var(--vimium-base);
 }
 
-#footerWrapper, #userDefinedLinkHintCss, #scrollStepSize, #linkHintNumbers, #newTabUrl, #nextPatterns, #previousPatterns, #searchUrl, #linkHintCharacters, #searchEngines, #keyMappings, #u
-ploadBackup
+body.vimiumBody, .vimiumBody {
+  background-color: var(--vimium-base) !important;
+}
+
+.vimiumBody #footerWrapper, #userDefinedLinkHintCss, #scrollStepSize, #linkHintNumbers, #newTabUrl, #nextPatterns, #previousPatterns, #searchUrl, #linkHintCharacters, #searchEngines, #keyMappings, #uploadBackup
 {
   background-color: var(--vimium-mantle);
 }
 
-#footer, .remove, input[name="pattern"], input[name="passKeys"], #uploadBackup
+.vimiumBody #footer, .vimiumBody .remove, input[name="pattern"], input[name="passKeys"], #uploadBackup
 {
   background-color: var(--vimium-mantle) !important;
 }
@@ -140,12 +148,6 @@ ploadBackup
 body.vimiumBody input {
   border-color: var(--vimium-crust);
 }
-
-div.vimiumHUD .hud-find {
-  background-color: var(--vimium-base);
-  border: none;
-}
-
 
 body.vimiumBody a {
   color: var(--vimium-lavender);
