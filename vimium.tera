@@ -145,12 +145,14 @@ body.vimiumBody, .vimiumBody {
 
 .vimiumBody #footerWrapper, #userDefinedLinkHintCss, #scrollStepSize, #linkHintNumbers, #newTabUrl, #nextPatterns, #previousPatterns, #searchUrl, #linkHintCharacters, #searchEngines, #keyMappings, #uploadBackup
 {
+  color: var(--vimium-text) !important;
   background-color: var(--vimium-mantle);
 }
 
 .vimiumBody #footer, .vimiumBody .remove, input[name="pattern"], input[name="passKeys"], #uploadBackup
 {
   background-color: var(--vimium-mantle) !important;
+  color: var(--vimium-text) !important;
 }
 
 body.vimiumBody input {
