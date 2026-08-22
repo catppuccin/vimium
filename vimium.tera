@@ -4,7 +4,7 @@ whiskers:
   matrix:
     - flavor
   hex_format: "#{{r}}{{g}}{{b}}"
-  filename: "themes/catppuccin-vimium-{{flavor.identifier}}.css"
+  filename: "themes/vimium/catppuccin-vimium-{{flavor.identifier}}.css"
 ---
 /* Catppuccin {{flavor.identifier | capitalize }} Palette */
 

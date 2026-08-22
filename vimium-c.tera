@@ -1,0 +1,381 @@
+---
+whiskers:
+  version: 2.5.1
+  matrix:
+    - flavor
+  hex_format: "#{{r}}{{g}}{{b}}"
+  filename: "themes/vimium-c/catppuccin-vimium-c-{{flavor.identifier}}.css"
+---
+{%- set fi = 0 -%}
+{%- if flavor.identifier == "frappe" -%}{%- set fi = 1 -%}{%- endif -%}
+{%- if flavor.identifier == "macchiato" -%}{%- set fi = 2 -%}{%- endif -%}
+{%- if flavor.identifier == "mocha" -%}{%- set fi = 3 -%}{%- endif -%}
+{%- set bA = [surface0.hex, surface0.hex, surface0.hex, surface1.hex] -%}
+{%- set bB = [surface1.hex, surface1.hex, surface1.hex, surface2.hex] -%}
+{%- set bC = [surface2.hex, surface2.hex, surface2.hex, overlay0.hex] -%}
+{%- set ink = [base.hex, crust.hex, crust.hex, mantle.hex] -%}
+{%- set dBg = [crust.hex, mantle.hex, mantle.hex, mantle.hex] -%}
+{%- set dTxt = [text.hex, subtext1.hex, subtext1.hex, subtext1.hex] -%}
+{%- set softBg = [mantle, surface0, surface0, surface0] -%}
+{%- set barBorder = [surface0.hex, surface1.hex, surface1.hex, surface1.hex] -%}
+{%- set hdInShadow = [surface2.hex, surface0.hex, surface0.hex, surface1.hex] -%}
+{%- set searchFill = [mauve.hex, mauve.hex, mauve.hex, lavender.hex] -%}
+{%- set vimD = [blue.hex, lavender.hex, lavender.hex, lavender.hex] -%}
+{%- set actLink = [lavender.hex, sapphire.hex, sapphire.hex, sapphire.hex] -%}
+{%- set hclsD = [overlay1.hex, surface2.hex, surface2.hex, surface2.hex] -%}
+{%- set hkBg = [surface1.hex, crust.hex, crust.hex, crust.hex] -%}
+{%- set hkBorder = [surface2.hex, surface1.hex, surface1.hex, surface2.hex] -%}
+{%- set hkBottom = [overlay0.hex, surface2.hex, overlay0.hex, overlay0.hex] -%}
+{%- set shLH = ["0.15", "0.3", "0.35", "0.35"] -%}
+{%- set shHud = ["0.1", "0.35", "0.4", "0.4"] -%}
+{%- set shDlg = ["0.12", "0.45", "0.5", "0.5"] -%}
+{%- set ihA = ["0.12", "0.15", "0.15", "0.15"] -%}
+{%- set ihsA = ["0.2", "0.25", "0.25", "0.25"] -%}
+{%- set focusA = ["0.3", "0.4", "0.4", "0.4"] -%}
+/* Catppuccin {{flavor.identifier | capitalize }} for Vimium C */
+
+/* #ui */
+
+.LH {
+  background: linear-gradient({{green.hex}}, {{teal.hex}});
+  border-color: {{mantle.hex}};
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, {{shLH[fi]}});
+  padding: 2px 4px 1px;
+}
+.D > .LH {
+  background: linear-gradient({{green.hex}}, {{teal.hex}});
+  border-color: {{crust.hex}};
+}
+.HM > .LH {
+  color: {{ink[fi]}};
+  font-weight: 700;
+  text-shadow: none;
+}
+.HM > .LH .MC,
+.HM > .LH .MH {
+  color: {{crust.hex}};
+}
+.IH {
+  background: rgba({{green.rgb.r}}, {{green.rgb.g}}, {{green.rgb.b}}, {{ihA[fi]}});
+  border-color: {{green.hex}};
+}
+.IHS {
+  background: rgba({{red.rgb.r}}, {{red.rgb.g}}, {{red.rgb.b}}, {{ihsA[fi]}});
+  border-color: {{red.hex}};
+}
+.BH {
+  color: {{peach.hex}};
+}
+.Flash {
+  box-shadow: 0 0 5px 2px {{blue.hex}};
+}
+.Sel {
+  box-shadow: 0 0 5px 2px {{peach.hex}};
+}
+.Frame {
+  border-color: {{yellow.hex}};
+}
+
+.HUD {
+  color: {{text.hex}};
+}
+.HUD:after {
+  background: {{base.hex}};
+  border-color: {{bA[fi]}};
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, {{shHud[fi]}});
+}
+.HUD.D {
+  color: {{subtext1.hex}};
+}
+.HUD.D:after {
+  background: {{crust.hex}};
+  border-color: {{bB[fi]}};
+}
+
+#HDlg {
+  background: {{base.hex}};
+  border-color: {{bA[fi]}};
+  color: {{text.hex}};
+  box-shadow: 0 4px 24px rgba(0, 0, 0, {{shDlg[fi]}});
+}
+.D > #HDlg {
+  background: {{dBg[fi]}};
+  border-color: {{bB[fi]}};
+  color: {{dTxt[fi]}};
+}
+.Vim {
+  color: {{blue.hex}};
+}
+.VimC {
+  color: {{peach.hex}};
+}
+.D .Vim {
+  color: {{vimD[fi]}};
+}
+.D .VimC {
+  color: {{peach.hex}};
+}
+.VimL {
+  color: {{blue.hex}};
+}
+.VimL:visited {
+  color: {{blue.hex}};
+}
+.VimL:active {
+  color: {{actLink[fi]}};
+}
+.D .VimL {
+  color: {{blue.hex}};
+}
+.D .VimL:hover {
+  color: {{lavender.hex}};
+}
+#HCls {
+  color: {{overlay0.hex}};
+}
+#HCls:hover {
+  color: {{text.hex}};
+}
+.D #HCls {
+  color: {{hclsD[fi]}};
+}
+.D #HCls:hover {
+  color: {{dTxt[fi]}};
+}
+.HelpKey {
+  background-color: {{surface0.hex}};
+  border-color: {{surface1.hex}};
+  border-bottom-color: {{surface2.hex}};
+  color: {{text.hex}};
+}
+.D .HelpKey {
+  background: {{hkBg[fi]}};
+  color: {{dTxt[fi]}};
+  border-color: {{hkBorder[fi]}};
+  border-bottom-color: {{hkBottom[fi]}};
+}
+.HDivider {
+  border-color: {{bA[fi]}};
+}
+.D .HDivider {
+  border-color: {{bB[fi]}};
+}
+.HelpSectionTitle {
+  color: {{mauve.hex}};
+}
+.D .HelpSectionTitle {
+  color: {{mauve.hex}};
+}
+.HelpCommandName {
+  color: {{sky.hex}};
+}
+.D .HelpCommandName {
+  color: {{sky.hex}};
+}
+.Scroll::-webkit-scrollbar:vertical {
+  border-left-color: {{bA[fi]}};
+}
+.Scroll::-webkit-scrollbar:horizontal {
+  border-top-color: {{bA[fi]}};
+}
+.Scroll:hover::-webkit-scrollbar-thumb {
+  background: {{bB[fi]}};
+}
+.D > .Scroll::-webkit-scrollbar:vertical {
+  border-left-color: {{bB[fi]}};
+}
+.D > .Scroll::-webkit-scrollbar:horizontal {
+  border-top-color: {{bB[fi]}};
+}
+.D > .Scroll:hover::-webkit-scrollbar-thumb {
+  background: {{bC[fi]}};
+}
+
+/* #omni */
+
+body {
+  background: {{base.hex}};
+}
+body::after {
+  border-color: {{bA[fi]}};
+}
+body.has-dark {
+  background: {{dBg[fi]}};
+}
+body.has-dark::after {
+  border-color: {{bB[fi]}};
+}
+#bar {
+  background: {{softBg[fi].hex}};
+  border-color: {{barBorder[fi]}};
+}
+#bar.empty {
+  border-color: {{softBg[fi].hex}};
+}
+#input {
+  background: {{base.hex}};
+  border-color: {{bA[fi]}};
+  color: {{text.hex}};
+  box-shadow: 0 0 2px {{bB[fi]}};
+}
+#input:focus {
+  border-color: {{blue.hex}};
+  box-shadow: 0 0 3px rgba({{blue.rgb.r}}, {{blue.rgb.g}}, {{blue.rgb.b}}, {{focusA[fi]}});
+}
+#list {
+  background: {{base.hex}};
+}
+body.has-dark #bar {
+  background: {{crust.hex}};
+  border-color: {{bB[fi]}};
+}
+body.has-dark #input {
+  background: {{mantle.hex}};
+  border-color: {{bB[fi]}};
+  color: {{text.hex}};
+  box-shadow: 0 0 2px {{hdInShadow[fi]}};
+}
+body.has-dark #list {
+  background: {{crust.hex}};
+}
+.item {
+  border-color: {{softBg[fi].hex}};
+}
+.item:hover {
+  background-color: rgba({{blue.rgb.r}}, {{blue.rgb.g}}, {{blue.rgb.b}}, 0.08);
+}
+.item.s {
+  background-color: rgba({{blue.rgb.r}}, {{blue.rgb.g}}, {{blue.rgb.b}}, 0.15);
+}
+.item.p {
+  border-color: {{blue.hex}};
+}
+.b {
+  border-bottom-color: transparent;
+}
+.top {
+  color: {{text.hex}};
+}
+.top a {
+  color: {{text.hex}};
+}
+.bottom {
+  color: {{subtext0.hex}};
+}
+.bottom a {
+  color: {{subtext0.hex}};
+}
+.label {
+  color: {{overlay1.hex}};
+}
+.time {
+  color: {{overlay1.hex}};
+}
+.icon {
+  fill: {{overlay1.hex}};
+}
+.tab {
+  stroke: {{blue.hex}};
+}
+.bookm {
+  fill: {{peach.hex}};
+}
+.history {
+  fill: {{green.hex}};
+}
+.search {
+  fill: {{searchFill[fi]}};
+}
+.domain {
+  fill: {{sky.hex}};
+}
+match {
+  color: {{green.hex}};
+  font-weight: 700;
+}
+.title > match {
+  color: {{blue.hex}};
+  text-decoration: underline;
+}
+#toolbar {
+  color: {{overlay1.hex}};
+}
+.button:hover {
+  background: rgba({{softBg[fi].rgb.r}}, {{softBg[fi].rgb.g}}, {{softBg[fi].rgb.b}}, 0.6);
+  color: {{text.hex}};
+}
+body.has-dark .button:hover {
+  background: rgba({{crust.rgb.r}}, {{crust.rgb.g}}, {{crust.rgb.b}}, 0.6);
+}
+#close {
+  stroke: {{overlay1.hex}};
+}
+#close:hover {
+  stroke: {{red.hex}};
+}
+.alt .alt-index::after {
+  background: {{surface0.hex}};
+  color: {{text.hex}};
+}
+body.has-dark .item {
+  border-color: {{softBg[fi].hex}};
+}
+body.has-dark .item:hover {
+  background-color: rgba({{blue.rgb.r}}, {{blue.rgb.g}}, {{blue.rgb.b}}, 0.08);
+}
+body.has-dark .item.s {
+  background-color: rgba({{blue.rgb.r}}, {{blue.rgb.g}}, {{blue.rgb.b}}, 0.15);
+}
+body.has-dark .item.p {
+  border-color: {{blue.hex}};
+}
+body.has-dark .top,
+body.has-dark .top a {
+  color: {{text.hex}};
+}
+body.has-dark .bottom,
+body.has-dark .bottom a {
+  color: {{subtext0.hex}};
+}
+body.has-dark #toolbar {
+  color: {{overlay0.hex}};
+}
+.has-dark > #bar {
+  background: {{crust.hex}};
+}
+
+/* #find */
+
+::selection {
+  background: {{peach.hex}};
+  color: {{ink[fi]}};
+}
+.r {
+  background: {{base.hex}};
+  color: {{text.hex}};
+  box-shadow: inset 0 0 2px 1px {{bA[fi]}};
+}
+.r.D {
+  background: {{dBg[fi]}};
+  color: {{dTxt[fi]}};
+}
+#i {
+  color: {{text.hex}};
+}
+#c {
+  color: {{overlay1.hex}};
+}
+
+/* #find:host */
+
+:host {
+  background: {{crust.hex}};
+}
+
+/* #find:selection */
+
+::selection {
+  background: {{peach.hex}};
+  color: {{ink[fi]}};
+}
