@@ -1,28 +1,28 @@
 ---
 whiskers:
-  version: ^2.5.1
+  version: "^2.9.0"
   matrix:
     - flavor
-  hex_format: "#{{r}}{{g}}{{b}}"
-  filename: "themes/vimium/catppuccin-vimium-{{flavor.identifier}}.css"
+  filename: "themes/vimium/catppuccin-vimium-{{ flavor.identifier }}.css"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
-/* Catppuccin {{flavor.identifier | capitalize }} Palette */
+/* Catppuccin {{ flavor.name }} Palette */
 
 :root {
-  --vimium-rosewater: {{rosewater.hex}};
-  --vimium-peach: {{peach.hex}};
-  --vimium-green: {{green.hex}};
-  --vimium-blue: {{blue.hex}};
-  --vimium-lavender: {{lavender.hex}};
-  --vimium-text: {{text.hex}};
-  --vimium-subtext0: {{subtext0.hex}}
-  --vimium-subtext1: {{subtext1.hex}}
-  --vimium-surface2: {{surface2.hex}};
-  --vimium-surface1: {{surface1.hex}};
-  --vimium-surface0: {{surface0.hex}};
-  --vimium-base: {{base.hex}};
-  --vimium-mantle: {{mantle.hex}};
-  --vimium-crust: {{crust.hex}};
+  --vimium-rosewater: {{ rosewater.hex }};
+  --vimium-peach: {{ peach.hex }};
+  --vimium-green: {{ green.hex }};
+  --vimium-blue: {{ blue.hex }};
+  --vimium-lavender: {{ lavender.hex }};
+  --vimium-text: {{ text.hex }};
+  --vimium-subtext0: {{ subtext0.hex }}
+  --vimium-subtext1: {{ subtext1.hex }}
+  --vimium-surface2: {{ surface2.hex }};
+  --vimium-surface1: {{ surface1.hex }};
+  --vimium-surface0: {{ surface0.hex }};
+  --vimium-base: {{ base.hex }};
+  --vimium-mantle: {{ mantle.hex }};
+  --vimium-crust: {{ crust.hex }};
 
   --vimium-foreground-text-color: var(--vimium-text);
   --vimium-background-text-color: var(--vimium-text);
