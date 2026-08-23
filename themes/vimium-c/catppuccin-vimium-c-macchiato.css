@@ -1,0 +1,347 @@
+/* Catppuccin Macchiato for Vimium C */
+
+/* #ui */
+
+.LH {
+  background: linear-gradient(#a6da95, #8bd5ca);
+  border-color: #1e2030;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  padding: 2px 4px 1px;
+}
+.D > .LH {
+  background: linear-gradient(#a6da95, #8bd5ca);
+  border-color: #181926;
+}
+.HM > .LH {
+  color: #181926;
+  font-weight: 700;
+  text-shadow: none;
+}
+.HM > .LH .MC,
+.HM > .LH .MH {
+  color: #181926;
+}
+.IH {
+  background: rgba(166, 218, 149, 0.15);
+  border-color: #a6da95;
+}
+.IHS {
+  background: rgba(237, 135, 150, 0.25);
+  border-color: #ed8796;
+}
+.BH {
+  color: #f5a97f;
+}
+.Flash {
+  box-shadow: 0 0 5px 2px #8aadf4;
+}
+.Sel {
+  box-shadow: 0 0 5px 2px #f5a97f;
+}
+.Frame {
+  border-color: #eed49f;
+}
+
+.HUD {
+  color: #cad3f5;
+}
+.HUD:after {
+  background: #24273a;
+  border-color: #363a4f;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4);
+}
+.HUD.D {
+  color: #b8c0e0;
+}
+.HUD.D:after {
+  background: #181926;
+  border-color: #494d64;
+}
+
+#HDlg {
+  background: #24273a;
+  border-color: #363a4f;
+  color: #cad3f5;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+.D > #HDlg {
+  background: #1e2030;
+  border-color: #494d64;
+  color: #b8c0e0;
+}
+.Vim {
+  color: #8aadf4;
+}
+.VimC {
+  color: #f5a97f;
+}
+.D .Vim {
+  color: #b7bdf8;
+}
+.D .VimC {
+  color: #f5a97f;
+}
+.VimL {
+  color: #8aadf4;
+}
+.VimL:visited {
+  color: #8aadf4;
+}
+.VimL:active {
+  color: #7dc4e4;
+}
+.D .VimL {
+  color: #8aadf4;
+}
+.D .VimL:hover {
+  color: #b7bdf8;
+}
+#HCls {
+  color: #6e738d;
+}
+#HCls:hover {
+  color: #cad3f5;
+}
+.D #HCls {
+  color: #5b6078;
+}
+.D #HCls:hover {
+  color: #b8c0e0;
+}
+.HelpKey {
+  background-color: #363a4f;
+  border-color: #494d64;
+  border-bottom-color: #5b6078;
+  color: #cad3f5;
+}
+.D .HelpKey {
+  background: #181926;
+  color: #b8c0e0;
+  border-color: #494d64;
+  border-bottom-color: #6e738d;
+}
+.HDivider {
+  border-color: #363a4f;
+}
+.D .HDivider {
+  border-color: #494d64;
+}
+.HelpSectionTitle {
+  color: #c6a0f6;
+}
+.D .HelpSectionTitle {
+  color: #c6a0f6;
+}
+.HelpCommandName {
+  color: #91d7e3;
+}
+.D .HelpCommandName {
+  color: #91d7e3;
+}
+.Scroll::-webkit-scrollbar:vertical {
+  border-left-color: #363a4f;
+}
+.Scroll::-webkit-scrollbar:horizontal {
+  border-top-color: #363a4f;
+}
+.Scroll:hover::-webkit-scrollbar-thumb {
+  background: #494d64;
+}
+.D > .Scroll::-webkit-scrollbar:vertical {
+  border-left-color: #494d64;
+}
+.D > .Scroll::-webkit-scrollbar:horizontal {
+  border-top-color: #494d64;
+}
+.D > .Scroll:hover::-webkit-scrollbar-thumb {
+  background: #5b6078;
+}
+
+/* #omni */
+
+body {
+  background: #24273a;
+}
+body::after {
+  border-color: #363a4f;
+}
+body.has-dark {
+  background: #1e2030;
+}
+body.has-dark::after {
+  border-color: #494d64;
+}
+#bar {
+  background: #363a4f;
+  border-color: #494d64;
+}
+#bar.empty {
+  border-color: #363a4f;
+}
+#input {
+  background: #24273a;
+  border-color: #363a4f;
+  color: #cad3f5;
+  box-shadow: 0 0 2px #494d64;
+}
+#input:focus {
+  border-color: #8aadf4;
+  box-shadow: 0 0 3px rgba(138, 173, 244, 0.4);
+}
+#list {
+  background: #24273a;
+}
+body.has-dark #bar {
+  background: #181926;
+  border-color: #494d64;
+}
+body.has-dark #input {
+  background: #1e2030;
+  border-color: #494d64;
+  color: #cad3f5;
+  box-shadow: 0 0 2px #363a4f;
+}
+body.has-dark #list {
+  background: #181926;
+}
+.item {
+  border-color: #363a4f;
+}
+.item:hover {
+  background-color: rgba(138, 173, 244, 0.08);
+}
+.item.s {
+  background-color: rgba(138, 173, 244, 0.15);
+}
+.item.p {
+  border-color: #8aadf4;
+}
+.b {
+  border-bottom-color: transparent;
+}
+.top {
+  color: #cad3f5;
+}
+.top a {
+  color: #cad3f5;
+}
+.bottom {
+  color: #a5adcb;
+}
+.bottom a {
+  color: #a5adcb;
+}
+.label {
+  color: #8087a2;
+}
+.time {
+  color: #8087a2;
+}
+.icon {
+  fill: #8087a2;
+}
+.tab {
+  stroke: #8aadf4;
+}
+.bookm {
+  fill: #f5a97f;
+}
+.history {
+  fill: #a6da95;
+}
+.search {
+  fill: #c6a0f6;
+}
+.domain {
+  fill: #91d7e3;
+}
+match {
+  color: #a6da95;
+  font-weight: 700;
+}
+.title > match {
+  color: #8aadf4;
+  text-decoration: underline;
+}
+#toolbar {
+  color: #8087a2;
+}
+.button:hover {
+  background: rgba(54, 58, 79, 0.6);
+  color: #cad3f5;
+}
+body.has-dark .button:hover {
+  background: rgba(24, 25, 38, 0.6);
+}
+#close {
+  stroke: #8087a2;
+}
+#close:hover {
+  stroke: #ed8796;
+}
+.alt .alt-index::after {
+  background: #363a4f;
+  color: #cad3f5;
+}
+body.has-dark .item {
+  border-color: #363a4f;
+}
+body.has-dark .item:hover {
+  background-color: rgba(138, 173, 244, 0.08);
+}
+body.has-dark .item.s {
+  background-color: rgba(138, 173, 244, 0.15);
+}
+body.has-dark .item.p {
+  border-color: #8aadf4;
+}
+body.has-dark .top,
+body.has-dark .top a {
+  color: #cad3f5;
+}
+body.has-dark .bottom,
+body.has-dark .bottom a {
+  color: #a5adcb;
+}
+body.has-dark #toolbar {
+  color: #6e738d;
+}
+.has-dark > #bar {
+  background: #181926;
+}
+
+/* #find */
+
+::selection {
+  background: #f5a97f;
+  color: #181926;
+}
+.r {
+  background: #24273a;
+  color: #cad3f5;
+  box-shadow: inset 0 0 2px 1px #363a4f;
+}
+.r.D {
+  background: #1e2030;
+  color: #b8c0e0;
+}
+#i {
+  color: #cad3f5;
+}
+#c {
+  color: #8087a2;
+}
+
+/* #find:host */
+
+:host {
+  background: #181926;
+}
+
+/* #find:selection */
+
+::selection {
+  background: #f5a97f;
+  color: #181926;
+}
